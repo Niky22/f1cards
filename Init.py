@@ -13,7 +13,7 @@ bot = Bot(BOT_TOKEN, parse_mode="HTML")
 dp = Dispatcher(bot, loop=loop, storage=storage)
 dp.middleware.setup(LoggingMiddleware())
 # webhook settings
-WEBHOOK_HOST = "https://f1cards.herokuapp.com/"
+WEBHOOK_HOST = "https://f1cards.herokuapp.com"
 WEBHOOK_PATH = f'/webhook/{BOT_TOKEN}'
 WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}'
 
